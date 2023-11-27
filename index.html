@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/style.css">
+    <title>Простой таймер задач</title>
+</head>
+<body>
+<header>
+    <p class="headerText">Простой таймер задач</p>
+    <div id="clock" class="clock"></div>
+</header>
+<div class="container">
+    <form id="taskForm">
+        <label for="taskName">Название задачи:</label>
+        <input type="text" id="taskName" class="taskName" required>
+        <label for="taskDescription">Описание задачи:</label>
+        <textarea id="taskDescription" class="taskDescription" required></textarea>
+        <button type="button" onclick="addTask()">Добавить задачу</button>
+    </form>
+    <div id="taskList"></div>
+</div>
+<footer>
+    <p>Created by koekto with ❤️</p>
+</footer>
+<script src="js/main.js"></script>
+</body>
+</html>
